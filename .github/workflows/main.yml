@@ -23,7 +23,7 @@ jobs:
 
 
       - name: Activate Virtual ENV
-        run: python -m venv venv && source venv/bin/activate && pip3 install -r requirements.txt
+        run: python -m venv venv && source venv/bin/activate && pip install -t lib -r requirements.txt
 
       - name: View Files
         run: ls
