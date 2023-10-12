@@ -27,8 +27,19 @@ jobs:
 
 
       - name: Making Zip File
-        run: (cd lib; zip lambda_function.zip -r .) && zip lambda_function.zip -u main.py && zip lambda_function.zip -ur app
+        run: (cd lib; zip lambda_function.zip -r .)
 
+      - name: View Files
+        run: ls
+
+      - name: Add Main To Zip
+        run: zip lambda_function.zip -u main.py
+
+      - name: View Files
+        run: ls
+
+      - name: Add App To Zip
+        run: zip lambda_function.zip -ur app
 
       - name: Upload zip file artifact
         uses: actions/upload-artifact@v2
