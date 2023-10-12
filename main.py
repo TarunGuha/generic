@@ -5,6 +5,6 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return { 'message' : 'Generic Working' }
+    return { "message": "Fast API Working"}
 
-handler = Mangum(app=app)
+handler = Mangum(app)
