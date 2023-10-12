@@ -1,0 +1,8 @@
+fastapi
+pydantic
+uvicorn
+mangum
+python-dotenv
+requests
+pyclean
+pytest
