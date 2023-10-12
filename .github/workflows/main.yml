@@ -27,7 +27,7 @@ jobs:
 
 
       - name: Making Zip File
-        run: (cd lib; zip ../lambda_function.zip -r .) && ls
+        run: (cd lib; zip lambda_function.zip -r .) && ls
 
 
       - name: Upload zip file artifact
