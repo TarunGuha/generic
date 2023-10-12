@@ -48,7 +48,7 @@ jobs:
 
 
       - name: Add API files to Zip file
-        run: cd ./app && zip -g ../app.zip -ur .
+        run: cd ./app && zip -g ../app.zip -r . && zip ../app.zip -ur app
 
 
       - name: Upload zip file artifact
